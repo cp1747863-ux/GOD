@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" role="img" aria-label="God's Eye View">
+  <defs>
+    <radialGradient id="bg" cx="50%" cy="6%" r="95%">
+      <stop offset="0%" stop-color="#1E3A8A" />
+      <stop offset="52%" stop-color="#07182E" />
+      <stop offset="100%" stop-color="#020617" />
+    </radialGradient>
+    <radialGradient id="halo" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#22D3EE" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#22D3EE" stop-opacity="0" />
+    </radialGradient>
+    <linearGradient id="eye" x1="12" y1="20" x2="52" y2="44">
+      <stop offset="0%" stop-color="#FFFFFF" />
+      <stop offset="100%" stop-color="#67E8F9" />
+    </linearGradient>
+    <radialGradient id="iris" cx="38%" cy="32%" r="75%">
+      <stop offset="0%" stop-color="#CFFAFE" />
+      <stop offset="62%" stop-color="#22D3EE" />
+      <stop offset="100%" stop-color="#0E7490" />
+    </radialGradient>
+  </defs>
+  <rect width="64" height="64" rx="15" fill="url(#bg)" />
+  <rect x="0.6" y="0.6" width="62.8" height="62.8" rx="14.4" fill="none" stroke="rgba(255,255,255,0.09)" stroke-width="1.2" />
+  <circle cx="32" cy="32" r="27" fill="url(#halo)" />
+  <g transform="rotate(-27 32 32)">
+    <ellipse cx="32" cy="32" rx="22.5" ry="9.2" fill="none" stroke="rgba(255,255,255,0.22)" stroke-width="0.9" stroke-dasharray="1.6 2.8" />
+  </g>
+  <g transform="translate(32 32) scale(1.14) translate(-24 -24)">
+    <path
+      d="M6.5 24C11.7 16.1 17.7 12.2 24 12.2S36.3 16.1 41.5 24C36.3 31.9 30.3 35.8 24 35.8S11.7 31.9 6.5 24Z"
+      fill="rgba(8,145,178,0.10)"
+      stroke="url(#eye)"
+      stroke-width="2.1"
+      stroke-linejoin="round"
+    />
+    <circle cx="24" cy="24" r="6.4" fill="url(#iris)" stroke="#67E8F9" stroke-width="1.1" />
+    <circle cx="24" cy="24" r="2.4" fill="#FDE68A" />
+    <circle cx="26.4" cy="21.6" r="1" fill="#FFFFFF" fill-opacity="0.95" />
+  </g>
+</svg>
